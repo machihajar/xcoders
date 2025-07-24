@@ -16,22 +16,7 @@ const Hero = () => {
         <p className="text-xl md:text-2xl mb-8 leading-relaxed opacity-90">
           Stories, science, and hope for a greener tomorrow
         </p>
-        <div className="space-y-4 sm:space-y-0 sm:space-x-4 sm:flex sm:justify-center">
-          <a 
-            href="#articles"
-            className="inline-block bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-8 py-3 rounded-lg transition-colors duration-200 shadow-lg hover:shadow-xl"
-          >
-            Read Articles
-          </a>
-          <a 
-            href="#contact"
-            className="inline-block bg-transparent border-2 border-white hover:bg-white hover:text-gray-900 text-white font-semibold px-8 py-3 rounded-lg transition-all duration-200"
-          >
-            Get in Touch
-          </a>
-        </div>
       </div>
-
 
     </section>
   );
