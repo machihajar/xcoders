@@ -101,10 +101,12 @@ export default function PollutionContact() {
     
               <div>
                 <h4 className="text-lg font-medium text-green-700 mb-2">Team members</h4>
+              
                 <p className="text-gray-700">Mohamed  akrame kraichy</p>
                 <p className="text-gray-700">Hajar Ennajdy</p>
                 <p className="text-gray-700">abd Allah mazzouz</p>
                 <p className="text-gray-700">Mohamed  maarouf </p>
+                <p className="text-gray-700">Aya moujoud </p>
               </div> 
               
             </div>
