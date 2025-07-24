@@ -6,10 +6,7 @@ export default function Navbar() {
   return (
     <nav
       style={{
-        backgroundImage:
-          'linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop")',
-        backgroundSize: "cover",
-        backgroundPosition: "center",
+        backgroundColor: "white", // Clean white background
       }}
       className="shadow-lg"
     >
@@ -17,23 +14,36 @@ export default function Navbar() {
         <div className="flex justify-between h-16 items-center">
           {/* Logo */}
           <div className="flex items-center">
-            <a href="/" className="text-3xl font-extrabold text-white tracking-wide">
+            <a
+              href="/"
+              className="text-3xl font-extrabold tracking-wide"
+              style={{ color: "#006400" }} // Dark green site name
+            >
               Earthlight Journal
             </a>
           </div>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="/" className="text-white hover:text-yellow-300 transition duration-300 text-lg font-medium">
+            <a
+              href="/"
+              className="text-gray-700 hover:text-green-700 transition duration-300 text-lg font-medium"
+            >
               Home
             </a>
-            <a href="/about" className="text-white hover:text-yellow-300 transition duration-300 text-lg font-medium">
+            <a
+              href="/about"
+              className="text-gray-700 hover:text-green-700 transition duration-300 text-lg font-medium"
+            >
               About
             </a>
-            <a href="/contact" className="text-white hover:text-yellow-300 transition duration-300 text-lg font-medium">
+            <a
+              href="/contact"
+              className="text-gray-700 hover:text-green-700 transition duration-300 text-lg font-medium"
+            >
               Contact
             </a>
-            <button className="bg-yellow-300 text-green-900 px-4 py-2 rounded-full font-semibold shadow hover:bg-yellow-200 transition">
+            <button className="bg-green-700 text-white px-4 py-2 rounded-full font-semibold shadow hover:bg-green-800 transition">
               Join Us
             </button>
           </div>
@@ -42,7 +52,7 @@ export default function Navbar() {
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setOpen(!open)}
-              className="text-white focus:outline-none"
+              className="text-green-800 focus:outline-none"
             >
               <svg
                 className="w-8 h-8"
@@ -68,28 +78,28 @@ export default function Navbar() {
           open ? "max-h-60 opacity-100" : "max-h-0 opacity-0"
         }`}
         style={{
-          background: "rgba(0, 0, 0, 0.6)",
+          background: "white", // Same clean background for mobile menu
         }}
       >
         <a
           href="/"
-          className="block py-3 px-4 text-white hover:bg-green-700 transition"
+          className="block py-3 px-4 text-gray-700 hover:bg-green-100 transition"
         >
           Home
         </a>
         <a
           href="/about"
-          className="block py-3 px-4 text-white hover:bg-green-700 transition"
+          className="block py-3 px-4 text-gray-700 hover:bg-green-100 transition"
         >
           About
         </a>
         <a
           href="/contact"
-          className="block py-3 px-4 text-white hover:bg-green-700 transition"
+          className="block py-3 px-4 text-gray-700 hover:bg-green-100 transition"
         >
           Contact
         </a>
-        <button className="w-full text-center bg-yellow-300 text-green-900 px-4 py-2 mt-2 rounded-full font-semibold shadow hover:bg-yellow-200 transition">
+        <button className="w-full text-center bg-green-700 text-white px-4 py-2 mt-2 rounded-full font-semibold shadow hover:bg-green-800 transition">
           Join Us
         </button>
       </div>
