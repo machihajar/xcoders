@@ -104,7 +104,7 @@ export default function PollutionContact() {
               
                 <p className="text-gray-700">Mohamed  akrame kraichy</p>
                 <p className="text-gray-700">Hajar Ennajdy</p>
-                <p className="text-gray-700">abd Allah mazzouz</p>
+                <p className="text-gray-700">Abdallah mazouz</p>
                 <p className="text-gray-700">Mohamed  maarouf </p>
                 <p className="text-gray-700">Aya moujoud </p>
               </div> 
